@@ -1,9 +1,9 @@
-
 body {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
   height: 100vh;
+  width: 100vw;
   margin: 0;
   font-family: Arial, sans-serif;
   background: url('/src/assets/images/Login.png') no-repeat center center fixed;
@@ -12,38 +12,46 @@ body {
 
 .login-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
   height: 100%;
-  position: relative;
 }
 
 .login-card {
-  background-color: #1e1e1e;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #22222218;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
   padding: 40px;
-  width: 300px;
+  width: 45vh; 
+  height: 60vh;
   text-align: center;
-  position: relative;
 }
 
 .login-logo {
-  background: url('/path/to/logo.png') no-repeat center;
-  width: 50px;
-  height: 50px;
+  background-image: url('/src/assets/images/Logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
   margin: 0 auto 20px;
 }
 
+
 .input-group {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .input {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #444;
+  border: none;
   border-radius: 4px;
   background-color: #333;
   color: #fff;
@@ -52,28 +60,25 @@ body {
 .remember-me {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   margin-bottom: 20px;
 }
 
 .remember-me label {
-  margin-left: 5px;
   color: #fff;
+  margin-left: 5px;
 }
 
 .login-btn {
-  background: linear-gradient(90deg, #667eea, #764ba2);
-  color: #fff;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
   padding: 10px;
-  border: none;
   border-radius: 4px;
-  cursor: pointer;
   width: 100%;
-  margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .login-btn:hover {
-  background: linear-gradient(90deg, #764ba2, #667eea);
+  background: linear-gradient(135deg, #764ba2, #667eea);
 }
 
 .forgot-password {
@@ -83,34 +88,4 @@ body {
 
 .forgot-password:hover {
   color: #fff;
-}
-
-.circle1,
-.circle2 {
-  position: absolute;
-  border-radius: 50%;
-  background: #764ba2;
-  filter: blur(100px);
-}
-
-.circle1 {
-  width: 200px;
-  height: 200px;
-  top: 10%;
-  left: 10%;
-}
-
-.circle2 {
-  width: 300px;
-  height: 300px;
-  bottom: 10%;
-  right: 10%;
-}
-
-.login-logo {
-  width: 50px;
-  height: 50px;
-  background: url('/path/to/logo.png') no-repeat center center;
-  background-size: contain;
-  margin-bottom: 20px;
 }

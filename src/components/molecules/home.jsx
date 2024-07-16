@@ -9,9 +9,6 @@ function UserProfile() {
     { id: 3, name: 'Ronald Richards', company: 'Adobe', phone: '(302) 555-0120', email: 'ronald@adobe.com', country: 'Israel' },
     { id: 4, name: 'Marvin McKinney', company: 'Twilio', phone: '(252) 555-0126', email: 'marvin@twilio.com', country: 'Iran' },
     { id: 5, name: 'Jerome Bell', company: 'Google', phone: '(317) 555-0110', email: 'jerome@google.com', country: 'Russia' },
-    { id: 6, name: 'Kathryn Murphy', company: 'Yahoo', phone: '(321) 555-0127', email: 'kathryn@yahoo.com', country: 'Canada' },
-    { id: 7, name: 'Jacob Jones', company: 'Netlify', phone: '(406) 555-0120', email: 'jacob@netlify.com', country: 'Brazil' },
-    { id: 8, name: 'Kristin Watson', company: 'Hackathon', phone: '(208) 555-0112', email: 'kristin@hackathon.com', country: 'United Kingdom' }
   ]);
 
   const [editingUser, setEditingUser] = useState(null);
@@ -48,9 +45,9 @@ function UserProfile() {
     <div className="profile-container">
       <div className="sidebar">
         <div className="profile-info">
-          <img src="/path/to/profile-picture.jpg" alt="Profile" className="profile-picture" />
+          <img src="/src/assets/images/Cristian.jpg" alt="Profile" className="profile-picture" />
           <h3>Cristian O</h3>
-          <p>ovandogomez@gmail.com</p>
+          <p>ovandogomez@gmail.com <Link to="/" className="back-to-login">REGRESAR</Link></p>
         </div>
         <ul className="menu">
           <li><Link to="/dashboard">Dashboard</Link></li>
